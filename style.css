@@ -90,7 +90,7 @@ body {
               url('images/Selection.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 120px 20px;
+  padding: 20vh 5vw;
 }
 
 .hero-content h1 {
@@ -235,24 +235,130 @@ body {
 }
 
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+
   .nav-links {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .features-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p,
+  .features-section p,
+  .testimonials-section p {
+    font-size: 1rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .subscribe-form input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .subscribe-form button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .try-free {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+  }
+}
+
+/* Hide default checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon style */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Nav Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    color: rgba(25, 119, 25, 0.76);
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-actions {
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
   }
 
-  .nav-actions {
+  .try-free {
+    margin-left: 0;
     margin-top: 10px;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
   }
 }
