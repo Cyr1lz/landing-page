@@ -1,0 +1,258 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  
+}
+
+/* Navbar Styles */
+.header {
+  background: #fff;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 0 100px;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 70px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #0fa958;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.sign-in {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.try-free {
+/*   padding: 8px 16px; */
+  background: #dff5e7;
+  color: #0fa958;
+  margin: 0 0 0 16px;
+  border-radius: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('images/Selection.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #0fa958;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b8748;
+}
+
+.features-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.features-section p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.feature-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #0fa958;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #444;
+}
+.cta-section {
+  background-color: #00704a;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-section .btn-primary {
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #00704a;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #e0f5ea;
+}
+
+/* Footer */
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.subscribe-form {
+  margin-bottom: 20px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  width: 240px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background-color: #f2541b;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-form button:hover {
+  background-color: #d3420c;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-actions {
+    margin-top: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
